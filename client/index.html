@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chirps</title>
+  </head>
+  <body>
+    <h1>Chirps</h1>
+    <div id="create">
+      <input id="user" type="text" size="50%" placeholder="User" />
+      <input id="msg" type="text" size="100%" placeholder="Chirp" />
+      <button onclick="postNewChirp()">Create New Chirp</button>
+    </div>
+
+    <div id="edit">
+      <div id="edit-container">
+        <h2>Edit Chirp</h2>
+        <input id="edit-user" type="text" />
+        <input id="edit-msg" type="text" />
+        <button id="edit-button" onclick="editChirp()">Edit Chirp</button>
+        <button id="cancel-button" onclick="closeEditor()">Cancel Edit</button>
+      </div>
+    </div>
+    <div id="chirps"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
